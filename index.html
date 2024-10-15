@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Language Code Compiler</title>
+    <link rel="icon" type="image/x-icon" href="./img/programming.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            Multi-Language Code Compiler
+            <div class="header-images">
+                <img src="./img/js.png" alt="JavaScript" id="img1">
+                <img src="./img/php.png" alt="PHP" id="img3">
+                <img src="./img/python.png" alt="Python" id="img2">
+            </div>
+        </div>
+        <div class="content">
+            <div class="editor">
+                <p><b>Editor</b></p>
+                <div class="editor-wrapper">
+                    <div class="line-numbers" id="lineNumbers"></div>
+                    <textarea id="codeEditor" placeholder="Write your code here..."></textarea>
+                </div>
+                <div class="button-container">
+                    <button class="toggle-btn" id="toggleBtn">
+                        <img src="./img/darkmode1.png" alt="Toggle Mode" id="toggleIcon">
+                    </button>
+                    <button class="run-btn">Run</button>
+                </div>
+            </div>
+            <div class="output-section">
+                <p>Output:</p><br><br>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.18.1/full/pyodide.js"></script>
+    <script src="script.js"></script>
+    <script src="AJsRun.js"></script>
+    <script src="PhpRun.js"></script>
+    <script src="PyRun.js"></script>
+</body>
+</html>
